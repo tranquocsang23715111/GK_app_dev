@@ -1,0 +1,25 @@
+fastapi uvicorn sqlalchemy python-multipart passlib[bcrypt] pyjwt
+
+
+# 1️⃣ Vào thư mục project
+cd đường_dẫn_project_của_bạn
+
+
+
+# 2️⃣ Khởi tạo Git (nếu chưa có)
+git init
+
+git config --global user.name "TenCuaBan"
+git config --global user.email "email@cuaban.com"
+
+# 3️⃣ Thêm tất cả file
+git add .
+
+# 4️⃣ Commit với nội dung
+git commit -m "baiGK"
+
+# 5️⃣ Thêm remote GitHub (thay URL bằng repo của bạn)
+git remote add origin https://github.com/username/ten-repo.git
+
+# 6️⃣ Đẩy và ghi đè toàn bộ repo trên GitHub
+git push origin main --force

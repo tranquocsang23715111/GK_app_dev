@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #1e1e2f;
+    color: white;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: #2f3542;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar input {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+.sidebar button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2ed573;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #26c06f;
+}
+
+.delete-multi {
+    background: crimson !important;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+.card-image {
+    background: #2f3542;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.card-image:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CHECKBOX */
+.card-image input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* INFO */
+.info {
+    padding: 10px;
+}
+
+.info h4 {
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* BUTTON */
+.info button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    background: #ff4757;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
